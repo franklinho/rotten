@@ -1,5 +1,7 @@
 Rotten Tomatoes Homework For Codepath Week 1
 
+
+
 - Hours Required For Completion: 8
 2. Stories
   * Completed
@@ -18,4 +20,8 @@ Rotten Tomatoes Homework For Codepath Week 1
   * Not Completed
     * All images should be cached in memory and disk. In other words, images load immediately upon cold start (optional).
     * Add a tab bar for Box Office and DVD. (optional) 
+<<<<<<< HEAD
+=======
+
+>>>>>>> c4c11c9bc8bc890f5a1207227a587aa74d9dd844
 
