@@ -191,8 +191,16 @@ class MoviesViewController: UIViewController, UITableViewDataSource,UITableViewD
     }
     
     func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
-        movieSearchBar.enablesReturnKeyAutomatically = false
-        
+        var movieSearchBarTextField : UITextField = UITextField()
+        for subview in movieSearchBar.subviews {
+            for secondLevelSubView in subview.subviews{
+                if secondLevelSubView.isKindOfClass(UITextField){
+                    movieSearchBarTextField = secondLevelSubView as UITextField
+                    break
+                }
+            }
+        }
+        movieSearchBarTextField.enablesReturnKeyAutomatically = false
     }
     
     func searchBarCancelButtonClicked(searchBar: UISearchBar){

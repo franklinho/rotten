@@ -111,7 +111,7 @@ class MovieDetailsViewController: UIViewController {
                 //4
                 
                 finalPoint.x = min(max(finalPoint.x, 0), self.view.frame.origin.x)
-                finalPoint.y = min(max(finalPoint.y,63), 350)
+                finalPoint.y = min(max(finalPoint.y,66), 350)
                 
                 UIView.animateWithDuration(Double(slideFactor), delay: 0, options: UIViewAnimationOptions.CurveEaseOut, animations: {sender.view!.frame.origin = finalPoint}, completion: nil)
                 
