@@ -4,10 +4,12 @@ Rotten Tomatoes Homework For Codepath Week 1
 
 
 
-- Hours Required For Completion: 8
+- Hours Required For Completion: 9
 2. Stories
   * Completed
     * Required
+      * Must use Cocoapods.
+      * Asynchronous image downloading must be implemented using the UIImageView category in the AFNetworking library.      
       * User can view a list of movies from Rotten Tomatoes. Poster images must be loading asynchronously.
       * User can view movie details by tapping on a cell
       * User sees loading state while waiting for movies API. You can use one of the 3rd party libraries at cocoacontrols.com.
