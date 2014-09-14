@@ -17,11 +17,8 @@ Rotten Tomatoes Homework For Codepath Week 1
       * Customize the highlight and selection effect of the cell. (optional)
       * Customize the navigation bar. (optional)	
       * Add a search bar. (optional)
+      * Add a tab bar for Box Office and DVD. (optional) 
   * Not Completed
     * All images should be cached in memory and disk. In other words, images load immediately upon cold start (optional).
-    * Add a tab bar for Box Office and DVD. (optional) 
-<<<<<<< HEAD
-=======
-
->>>>>>> c4c11c9bc8bc890f5a1207227a587aa74d9dd844
+    
 
