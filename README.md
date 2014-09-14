@@ -1,6 +1,7 @@
 Rotten Tomatoes Homework For Codepath Week 1
 
-
+[![General Functionality](https://github.com/franklinho/rotten/blob/master/RottenTomatoes.gif)]
+[![Network Error](https://github.com/franklinho/rotten/blob/master/RottenTomatoesNetworkConnectivity.gif)]
 
 - Hours Required For Completion: 8
 2. Stories
@@ -20,5 +21,11 @@ Rotten Tomatoes Homework For Codepath Week 1
       * Add a tab bar for Box Office and DVD. (optional) 
   * Not Completed
     * All images should be cached in memory and disk. In other words, images load immediately upon cold start (optional).
+<<<<<<< HEAD
     
+=======
+    * Add a tab bar for Box Office and DVD. (optional) 
+
+
+>>>>>>> 845242f8ba7f21a135d276620b634c0fec3a3e02
 
