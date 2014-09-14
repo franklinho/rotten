@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="qfv-fx-PDQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="PgD-rQ-EOs">
     <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
@@ -90,7 +91,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1194" y="618"/>
+            <point key="canvasLocation" x="1726" y="618"/>
         </scene>
         <!--Movie Details View Controller-->
         <scene sceneID="4WC-xk-hIg">
@@ -163,7 +164,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1626" y="607"/>
+            <point key="canvasLocation" x="2158" y="607"/>
         </scene>
         <!--Movies-->
         <scene sceneID="gl4-Ii-bnv">
@@ -182,12 +183,66 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lw3-1k-11K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="662" y="618"/>
+            <point key="canvasLocation" x="1194" y="618"/>
+        </scene>
+        <!--Rotten Tab Bar Controller-->
+        <scene sceneID="taC-e5-eAh">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="PgD-rQ-EOs" customClass="RottenTabBarController" customModule="rotten" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="z8M-J6-gRD">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="qfv-fx-PDQ" kind="relationship" relationship="viewControllers" id="jfs-xp-QGh"/>
+                        <segue destination="2ed-Xb-hJA" kind="relationship" relationship="viewControllers" id="G9S-RV-RjY"/>
+                        <segue destination="Hlo-Ez-xPT" kind="relationship" relationship="viewControllers" id="kua-MQ-osN"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Ln-OV-SAI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="702" y="618"/>
+        </scene>
+        <!--DVDs-->
+        <scene sceneID="lm4-hh-HsA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2ed-Xb-hJA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="DVDs" image="dvd.png" id="oC7-Rb-rH0"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CsJ-XJ-xiX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tw7-cY-d6p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1205" y="1386"/>
+        </scene>
+        <!--Box Office-->
+        <scene sceneID="JKa-RD-ikk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hlo-Ez-xPT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Box Office" image="boxoffice.png" id="cBq-Bc-Amc"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lcE-e3-bgv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2EO-Mv-UPt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1194" y="-46"/>
         </scene>
     </scenes>
     <resources>
+        <image name="boxoffice.png" width="24" height="24"/>
+        <image name="dvd.png" width="24" height="24"/>
         <image name="error.png" width="256" height="256"/>
-        <image name="movies.png" width="256" height="256"/>
+        <image name="movies.png" width="24" height="24"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

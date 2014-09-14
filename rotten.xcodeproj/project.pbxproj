@@ -16,10 +16,11 @@
 		BB58B41019C3903C00178982 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58B40F19C3903C00178982 /* MoviesViewController.swift */; };
 		BB58B41219C398CE00178982 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58B41119C398CE00178982 /* MovieCell.swift */; };
 		BB58B41719C3B6DC00178982 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58B41619C3B6DC00178982 /* MovieDetailsViewController.swift */; };
+		BB7A3B7419C62E6C00B90C4B /* RottenTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7A3B7319C62E6C00B90C4B /* RottenTabBarController.swift */; };
+		BB7A3B7A19C6313900B90C4B /* boxoffice.png in Resources */ = {isa = PBXBuildFile; fileRef = BB7A3B7919C6313900B90C4B /* boxoffice.png */; };
+		BB7A3B7C19C6313F00B90C4B /* movies.png in Resources */ = {isa = PBXBuildFile; fileRef = BB7A3B7B19C6313F00B90C4B /* movies.png */; };
+		BB7A3B7E19C6314600B90C4B /* dvd.png in Resources */ = {isa = PBXBuildFile; fileRef = BB7A3B7D19C6314600B90C4B /* dvd.png */; };
 		BB8868AF19C419E800A8A068 /* error.png in Resources */ = {isa = PBXBuildFile; fileRef = BB8868AE19C419E800A8A068 /* error.png */; };
-		BBDFA2DE19C420CF00E5135B /* movies.png in Resources */ = {isa = PBXBuildFile; fileRef = BBDFA2DD19C420CF00E5135B /* movies.png */; };
-		BBDFA2E019C420D200E5135B /* box_office.png in Resources */ = {isa = PBXBuildFile; fileRef = BBDFA2DF19C420D200E5135B /* box_office.png */; };
-		BBDFA2E219C420D600E5135B /* dvds.png in Resources */ = {isa = PBXBuildFile; fileRef = BBDFA2E119C420D600E5135B /* dvds.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,10 +49,11 @@
 		BB58B41119C398CE00178982 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		BB58B41319C3B11000178982 /* rotten-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rotten-Bridging-Header.h"; sourceTree = "<group>"; };
 		BB58B41619C3B6DC00178982 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		BB7A3B7319C62E6C00B90C4B /* RottenTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RottenTabBarController.swift; sourceTree = "<group>"; };
+		BB7A3B7919C6313900B90C4B /* boxoffice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boxoffice.png; sourceTree = "<group>"; };
+		BB7A3B7B19C6313F00B90C4B /* movies.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = movies.png; sourceTree = "<group>"; };
+		BB7A3B7D19C6314600B90C4B /* dvd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dvd.png; sourceTree = "<group>"; };
 		BB8868AE19C419E800A8A068 /* error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = error.png; sourceTree = "<group>"; };
-		BBDFA2DD19C420CF00E5135B /* movies.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = movies.png; sourceTree = "<group>"; };
-		BBDFA2DF19C420D200E5135B /* box_office.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box_office.png; sourceTree = "<group>"; };
-		BBDFA2E119C420D600E5135B /* dvds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dvds.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				BB58B41119C398CE00178982 /* MovieCell.swift */,
 				BB58B3F119C38EC300178982 /* Main.storyboard */,
 				BB58B41619C3B6DC00178982 /* MovieDetailsViewController.swift */,
+				BB7A3B7319C62E6C00B90C4B /* RottenTabBarController.swift */,
 				BB58B3F419C38EC300178982 /* Images.xcassets */,
 				BB58B3F619C38EC300178982 /* LaunchScreen.xib */,
 				BB58B3EB19C38EC300178982 /* Supporting Files */,
@@ -146,10 +149,10 @@
 		BB8868AD19C4198C00A8A068 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				BB7A3B7B19C6313F00B90C4B /* movies.png */,
+				BB7A3B7D19C6314600B90C4B /* dvd.png */,
 				BB8868AE19C419E800A8A068 /* error.png */,
-				BBDFA2DD19C420CF00E5135B /* movies.png */,
-				BBDFA2DF19C420D200E5135B /* box_office.png */,
-				BBDFA2E119C420D600E5135B /* dvds.png */,
+				BB7A3B7919C6313900B90C4B /* boxoffice.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -244,13 +247,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB7A3B7E19C6314600B90C4B /* dvd.png in Resources */,
 				BB8868AF19C419E800A8A068 /* error.png in Resources */,
-				BBDFA2DE19C420CF00E5135B /* movies.png in Resources */,
 				BB58B3F319C38EC300178982 /* Main.storyboard in Resources */,
-				BBDFA2E019C420D200E5135B /* box_office.png in Resources */,
 				BB58B3F819C38EC300178982 /* LaunchScreen.xib in Resources */,
 				BB58B3F519C38EC300178982 /* Images.xcassets in Resources */,
-				BBDFA2E219C420D600E5135B /* dvds.png in Resources */,
+				BB7A3B7C19C6313F00B90C4B /* movies.png in Resources */,
+				BB7A3B7A19C6313900B90C4B /* boxoffice.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +308,7 @@
 				BB58B3EE19C38EC300178982 /* AppDelegate.swift in Sources */,
 				BB58B41019C3903C00178982 /* MoviesViewController.swift in Sources */,
 				BB58B41219C398CE00178982 /* MovieCell.swift in Sources */,
+				BB7A3B7419C62E6C00B90C4B /* RottenTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
