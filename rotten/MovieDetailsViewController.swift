@@ -25,6 +25,7 @@ class MovieDetailsViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
+        
         self.navigationItem.title = movie["title"] as? String
         
         var title : String = movie["title"] as String
@@ -34,9 +35,11 @@ class MovieDetailsViewController: UIViewController {
         var audienceScore : Int = ratings["audience_score"] as Int
         var synopsis :String = movie["synopsis"] as String
         var rating : String = movie["mpaa_rating"] as String
-    
+        
+        // set original location of summaryView
         summaryView.frame.origin.y=350
         
+        // Assign values to detailView
         self.titleLabel.text = title+" ("+String(year)+")"
         self.scoreLabel.text = "Critics Score: \(String(criticsScore)), Audience Score: \(String(audienceScore))"
         self.ratingLabel.text = rating
@@ -44,14 +47,17 @@ class MovieDetailsViewController: UIViewController {
         
         var posters = movie["posters"] as NSDictionary
         var thumbnailPosterURL = posters["thumbnail"] as String
-
-        var detailedPosterURL = thumbnailPosterURL.stringByReplacingOccurrencesOfString("tmb", withString: "det", options: NSStringCompareOptions.LiteralSearch, range: nil)
+        
+        // Get detailed poster url
+        var detailedPosterURL = thumbnailPosterURL.stringByReplacingOccurrencesOfString("tmb", withString: "org", options: NSStringCompareOptions.LiteralSearch, range: nil)
         
         println("\(detailedPosterURL)")
         
+        // load thumbnail image
         posterView.alpha = 0.0
         posterView.setImageWithURL(NSURL(string: thumbnailPosterURL))
         
+        // make image fade in
         UIView.animateWithDuration(1.0,
             delay: 0.0,
             options: nil,
@@ -62,7 +68,7 @@ class MovieDetailsViewController: UIViewController {
                 finished in
         })
 
-        
+        //load detailed poster image
         posterView.setImageWithURL(NSURL(string: detailedPosterURL))
     }
 
@@ -82,7 +88,7 @@ class MovieDetailsViewController: UIViewController {
     }
     */
 
-
+    // lets you slide summary view up and down
     @IBAction func handlePan(sender: UIPanGestureRecognizer) {
         let translation = sender.translationInView(self.view)
         var newY : CGPoint = CGPoint(x: sender.view!.frame.origin.x, y: sender.view!.frame.origin.y + translation.y)
